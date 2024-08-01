@@ -9,6 +9,7 @@ import {
   GestureHandlerRootView,
   Pressable,
 } from "react-native-gesture-handler";
+import CustomButton from "../components/CustomButton";
 
 const onboardingSteps = [
   {
@@ -21,7 +22,7 @@ const onboardingSteps = [
     image: require("../assets/images/onboard-2.png"),
     subtitle: "Investing made simple",
     description:
-      "Trade stocks, ETFs, and crypto, or put your investments in autopilot.",
+      "Trade stocks, ETFs and crypto, or put your investments in autopilot.",
     btnTitle: "Next ￫",
   },
   {
@@ -85,8 +86,11 @@ export default function App() {
             </Text>
 
             <View className="items-center w-full">
-              {/* <Button title="Skip" onPress={endOnboarding} /> */}
-              <Button title={data.btnTitle} onPress={onContinue} />
+              {/* <CustomButton title="Skip"  handlePress={()=> endOnboarding()} /> */}
+              <CustomButton
+                title={data.btnTitle}
+                handlePress={() => onContinue()}
+              />
             </View>
           </View>
           {/* </GestureDetector>
