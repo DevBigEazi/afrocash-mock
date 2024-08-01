@@ -1,15 +1,17 @@
 {
   "expo": {
-    "name": "paradise",
-    "slug": "paradise",
+    "name": "Afrocash",
+    "slug": "afrocash",
+    "scheme": "afrocash",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icons/success.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+
     },
     "ios": {
       "supportsTablet": true
@@ -21,7 +23,8 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router", "expo-font"]
   }
 }
