@@ -2,6 +2,7 @@ import { SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import { useEffect, useState } from "react";
 import SplashScreenView from "../components/SplashScreenView";
+import { StatusBar } from "react-native";
 
 export default function RootLayout() {
   const [fontsLoaded, error] = useFonts({
@@ -12,6 +13,7 @@ export default function RootLayout() {
     "Inter_28pt-Medium": require("../assets/fonts/inter/Inter_28pt-Medium.ttf"),
     "Inter_28pt-SemiBold": require("../assets/fonts/inter/Inter_28pt-SemiBold.ttf"),
     "Inter_28pt-ExtraBold": require("../assets/fonts/inter/Inter_28pt-ExtraBold.ttf"),
+    "Inter_28pt-Bold": require("../assets/fonts/inter/Inter_28pt-Bold.ttf"),
     "Inter_28pt-Black": require("../assets/fonts/inter/Inter_28pt-Black.ttf"),
     "PermanentMarker-Regular": require("../assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf"),
   });
@@ -35,6 +37,7 @@ export default function RootLayout() {
 
   return (
     <>
+      <StatusBar barStyle="dark-content" />
       {!isShowingSplashScreen ? (
         <SplashScreenView />
       ) : (
