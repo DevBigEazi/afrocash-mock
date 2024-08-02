@@ -5,7 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 primary: "#FEFEFE",
-                black: "#1C1C1C"
+                black: "#1C1C1C",
+                gray: "#B7B7B7"
             },
             fontFamily: {
                 ithin: ["Inter_28pt-Thin", "sans-serif"],
