@@ -45,7 +45,7 @@ const ConfirmEmail = () => {
             Resend email in 03:45
           </Text>
 
-          <CustomButton containerStyle="mt-[350px] " title="Continue" />
+          <CustomButton containerStyle="mt-[360px] " title="Continue" />
         </View>
       </ScrollView>
     </SafeAreaView>
