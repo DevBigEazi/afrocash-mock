@@ -42,7 +42,7 @@ export default function App() {
     const isLastScreen = screenIndex === onboardingSteps.length - 1;
 
     if (isLastScreen) {
-      router.push("/sign-up");
+      router.push("/home"); //sign-up
     } else {
       setScreenIndex(screenIndex + 1);
     }

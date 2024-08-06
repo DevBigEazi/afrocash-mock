@@ -6,7 +6,10 @@ module.exports = {
             colors: {
                 primary: "#FEFEFE",
                 black: "#1C1C1C",
-                gray: "#B7B7B7"
+                gray: {
+                    DEFAULT: "#B7B7B7",
+                    100: "#D9D9D9"
+                }
             },
             fontFamily: {
                 ithin: ["Inter_28pt-Thin", "sans-serif"],
