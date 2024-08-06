@@ -1,20 +1,12 @@
-import { Link, router } from "expo-router";
+import { router } from "expo-router";
 import { useState } from "react";
-import {
-  Button,
-  Image,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
+import { Image, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   Directions,
   Gesture,
   GestureDetector,
   GestureHandlerRootView,
-  Pressable,
 } from "react-native-gesture-handler";
 import CustomButton from "../components/CustomButton";
 
@@ -78,7 +70,7 @@ export default function App() {
 
   return (
     <GestureHandlerRootView>
-      <SafeAreaView className="h-full bg-primary">
+      <SafeAreaView className="h-full bg-primary mt-5">
         {onboardingSteps.map((step, index) => (
           <View
             key={index}

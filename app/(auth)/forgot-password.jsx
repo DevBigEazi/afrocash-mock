@@ -5,9 +5,9 @@ import FormField from "../../components/FormField";
 import { useState } from "react";
 import CustomButton from "../../components/CustomButton";
 
-const ConfirmEmail = () => {
+const ForgotPassword = () => {
   const [form, setForm] = useState({
-    emailCode: "",
+    email: "",
   });
 
   return (
@@ -15,41 +15,30 @@ const ConfirmEmail = () => {
       <ScrollView>
         <View className="max-h-full w-full justify-start items-start p-4 mb-8">
           <Text className="text-black text-2xl font-isemibold">
-            Confirm your email
+            Forgot Password
           </Text>
 
           <Text className="text-black text-sm font-ilight">
-            We sent a code to <Text>{"example@gmail.com"}</Text>.{" "}
-            <Link href="/confirm-email">
-              <Text className="underline">Change</Text>
-            </Link>
+            Reset your password to access your account
           </Text>
 
           <FormField
-            title={"Verification code"}
+            title={"Your email"}
             otherStyles="mt-8"
             handleChangeText={(e) =>
               setForm({
                 ...form,
-                emailCode: e,
+                email: e,
               })
             }
             value={form.email}
           />
 
-          {/* To specify condition... */}
-          <Text className="mt-5 text-black text-sm font-iregular">
-            Didn't get the email? Check your spam/junk or resend it.
-          </Text>
-          <Text className="mt-5 text-black text-xs font-iregular">
-            Resend email in 03:45
-          </Text>
-
-          <CustomButton containerStyle="mt-[400px] " title="Continue" />
+          <CustomButton containerStyle="mt-[520px] " title="Continue" />
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default ConfirmEmail;
+export default ForgotPassword;

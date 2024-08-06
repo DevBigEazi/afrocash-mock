@@ -11,7 +11,7 @@ const SignUp = () => {
     password: "",
   });
   return (
-    <SafeAreaView className="h-full">
+    <SafeAreaView className="h-full mt-5">
       <ScrollView>
         <View className="flex-1 justify-start items-start p-4">
           <Text className="text-black text-2xl font-isemibold">
@@ -22,7 +22,7 @@ const SignUp = () => {
             Have an account?{" "}
             <Link href="/sign-in">
               <Text className="underline">Login</Text>
-            </Link>
+            </Link>{" "}
             <Link href="/confirm-email">
               <Text className="underline">ConfirmEmail...</Text>
             </Link>
@@ -54,7 +54,7 @@ const SignUp = () => {
           />
 
           {/* To specify condition... */}
-          <Text className="mt-5 text-black text-sm font-iregular">
+          <Text className="mt-5 text-red-500 text-sm font-iregular">
             Password must be a minimum of 8 characters. Include one letter, and
             one number or symbol.
           </Text>
