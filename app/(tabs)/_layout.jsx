@@ -1,23 +1,26 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, StatusBar } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 import { icons } from "../../constants";
 
 const TabBarIcon = ({ icon, name, color, focused }) => {
   return (
-    <View className="items-center justify-center gap-1">
-      <Image
-        source={icon}
-        resizeMode="contain"
-        tintColor={color}
-        className="w-5 h-5"
-      />
-      <Text
-        className={`${focused ? "font-isemibold" : "font-iregular"} text-xs`}
-        style={{ color: color }}>
-        {name}
-      </Text>
-    </View>
+    <>
+      <View className="items-center justify-center gap-1">
+        <Image
+          source={icon}
+          resizeMode="contain"
+          tintColor={color}
+          className="w-5 h-5"
+        />
+        <Text
+          className={`${focused ? "font-isemibold" : "font-ilight"} text-xs`}
+          style={{ color: color }}>
+          {name}
+        </Text>
+      </View>
+      <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
+    </>
   );
 };
 
@@ -28,7 +31,7 @@ const TabsLayout = () => {
         screenOptions={{
           tabBarShowLabel: false,
           tabBarActiveTintColor: "#1F2223",
-          tabBarInactiveTintColor: "#D9D9D9",
+          tabBarInactiveTintColor: "#9ca3af",
           tabBarStyle: {
             borderTopWidth: 1,
             borderTopColor: "#EAEAEA",

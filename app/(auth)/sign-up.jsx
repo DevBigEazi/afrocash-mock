@@ -63,7 +63,11 @@ const SignUp = () => {
             By continuing, you agree to the Afrocash Platform Terms &
             conditions. Rewards Policy,and Privacy Policy.
           </Text>
-          <CustomButton containerStyle="mt-4" title="Continue" />
+          <CustomButton
+            containerStyle="mt-4 w-full rounded-lg h-16"
+            title="Continue ￫"
+            textStyle="text-lg font-imedium"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -34,7 +34,11 @@ const ForgotPassword = () => {
             value={form.email}
           />
 
-          <CustomButton containerStyle="mt-[520px] " title="Continue" />
+          <CustomButton
+            containerStyle="mt-[520px] w-full rounded-lg h-16"
+            title="Continue"
+            textStyle="text-lg font-imedium"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

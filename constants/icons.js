@@ -6,5 +6,8 @@ import save from "../assets/icons/save.png"
 import invest from "../assets/icons/invest.png"
 import searchSmall from "../assets/icons/search-small.png"
 import profile from "../assets/icons/profile.png"
+import bell from "../assets/icons/bell.png"
+import file from "../assets/icons/file.png"
+import poundsBg from "../assets/icons/pounds-bg.png"
 
-export default { success, eyeCrossed, eye, home, save, invest, searchSmall, profile };
+export default { success, eyeCrossed, eye, home, save, invest, searchSmall, profile, bell, file, poundsBg };

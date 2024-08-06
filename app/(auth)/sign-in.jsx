@@ -54,7 +54,11 @@ const SignIn = () => {
             Incorrect email or password
           </Text>
 
-          <CustomButton containerStyle="mt-4" title="Login" />
+          <CustomButton
+            containerStyle="mt-4 w-full rounded-lg h-16"
+            title="Login"
+            textStyle="text-lg font-imedium"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>

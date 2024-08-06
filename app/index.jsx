@@ -15,14 +15,14 @@ const onboardingSteps = [
     image: require("../assets/images/onboard-1.png"),
     subtitle: "Do money right",
     description: "Grow and manage your money all in one place.",
-    btnTitle: "Next",
+    btnTitle: "Next ￫",
   },
   {
     image: require("../assets/images/onboard-2.png"),
     subtitle: "Investing made simple",
     description:
       "Trade stocks, ETFs and crypto, or put your investments in autopilot.",
-    btnTitle: "Next",
+    btnTitle: "Next ￫",
   },
   {
     image: require("../assets/images/onboard-3.png"),
@@ -97,6 +97,8 @@ export default function App() {
                   <CustomButton
                     title={data.btnTitle}
                     handlePress={onContinue}
+                    containerStyle="w-full rounded-lg h-16"
+                    textStyle="text-lg font-imedium"
                   />
                 </View>
               </View>
